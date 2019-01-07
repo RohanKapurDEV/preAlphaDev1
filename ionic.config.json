@@ -1,6 +1,8 @@
 {
   "name": "preAlphaDev1",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular",
   "id": "53992bec"
 }

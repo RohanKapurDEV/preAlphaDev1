@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router'
 
 @Component({
   selector: 'app-dev-room',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DevRoomPage implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
+  }
+
+  private goToBioAuth() {
+    this.router.navigateByUrl('/finger-print')
   }
 
 }
