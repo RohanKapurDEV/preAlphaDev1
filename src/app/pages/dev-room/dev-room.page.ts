@@ -14,7 +14,18 @@ export class DevRoomPage implements OnInit {
   }
 
   private goToBioAuth() {
-    this.router.navigateByUrl('/finger-print')
+    this.router.navigateByUrl('/finger-print');
   }
 
+  private goToSql() {
+    this.router.navigateByUrl('/sqlite');
+  }
+
+  private goToHttpClient() {
+    this.router.navigateByUrl('/http-client');
+  }
+
+  private goToQrCodeReader() {
+    this.router.navigateByUrl('/qr-code-reader');
+  }
 }
