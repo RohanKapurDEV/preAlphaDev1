@@ -8,6 +8,7 @@ const routes: Routes = [
   { path: 'sqlite', loadChildren: './pages/rooms/sqlite/sqlite.module#SqlitePageModule' },
   { path: 'qr-code-reader', loadChildren: './pages/rooms/qr-code-reader/qr-code-reader.module#QrCodeReaderPageModule' },
   { path: 'http-client', loadChildren: './pages/rooms/http-client/http-client.module#HttpClientPageModule' },
+  { path: 'secure-store', loadChildren: './pages/rooms/secure-store/secure-store.module#SecureStorePageModule' },
 ];
 
 @NgModule({

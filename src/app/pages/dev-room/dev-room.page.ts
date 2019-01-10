@@ -28,4 +28,8 @@ export class DevRoomPage implements OnInit {
   private goToQrCodeReader() {
     this.router.navigateByUrl('/qr-code-reader');
   }
+  
+  private goToSecureStorage() {
+    this.router.navigateByUrl('/secure-store');
+  }
 }
