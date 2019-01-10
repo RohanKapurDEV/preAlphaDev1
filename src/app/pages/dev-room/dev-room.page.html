@@ -1,11 +1,12 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title class="cerebriSemiBold">DEX Devroom</ion-title>
+    <ion-title class="SF-Pro-Display-Medium">DEX Devroom</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
-  <div class="cerebriBook info">
+  <!-- Change from display to text -->
+  <div class="SF-Pro-Display-Light"> 
     This is a test-devroom for functionality that is to be implemented in the final DEX software. The devroom should and will include
     all necessary testing components required in the final product.
   </div>
@@ -17,5 +18,9 @@
     <ion-button color="primary" expand="block" (click)="goToQrCodeReader()">Test QR Code Reader</ion-button>
     <ion-button color="primary" expand="block" (click)="goToSql()">Test SQLite Persistant Storage</ion-button>
     <ion-button color="primary" expand="block" (click)="goToSecureStorage()">Test Hardware Encryption</ion-button>
+  </div>
+
+  <div>
+    <h1 class="SF-Pro-Display-Bold title">Wallets</h1>
   </div>
 </ion-content>
