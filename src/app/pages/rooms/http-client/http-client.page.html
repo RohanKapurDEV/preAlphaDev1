@@ -1,9 +1,21 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>HTTP Client</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content padding>
+  <div class="SF-Pro-Text-Bold title">Data fetching</div>
+  <p class="SF-Pro-Text-Regular">This page is to test out the Kyber Network and Cryptocompare REST APIs.</p>
+  
+  <ion-button class="button" color="dark" fill="outline" (click)="getKyberPairRates()">Fetch data</ion-button>
+  <div> {{ loading }} </div>
+  
+  <br>
 
+  <div *ngFor="let item of tokenData | async">
+    {{ item.name }}
+  </div>
+  
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed" (click)="goToDashboard()">
+    <ion-fab-button color="dark" routerDirection="back">
+      <ion-icon name="home"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+  <div></div>
 </ion-content>
