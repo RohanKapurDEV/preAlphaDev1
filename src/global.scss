@@ -10,7 +10,7 @@
 @import '~@ionic/angular/css/text-transformation.css';
 @import '~@ionic/angular/css/flex-utils.css';
 
-/* San-francisco Typeface class definitions */
+/* San-francisco Pro Display Typeface class definitions */
 
 .SF-Pro-Display-Thin{
     font-family: 'SF-Pro-Display-Thin';
@@ -42,4 +42,31 @@
 
 .SF-Pro-Display-Black{
     font-family: 'SF-Pro-Display-Black';
+}
+
+
+/* San-francisco Pro Display Typeface class definitions */
+
+.SF-Pro-Text-Light {
+    font-family: 'SF-Pro-Text-Light';
+}
+
+.SF-Pro-Text-Regular {
+    font-family: 'SF-Pro-Text-Regular';
+}
+
+.SF-Pro-Text-Medium {
+    font-family: 'SF-Pro-Text-Medium';
+}
+
+.SF-Pro-Text-Semibold {
+    font-family: 'SF-Pro-Text-Semibold';
+}
+
+.SF-Pro-Text-Bold {
+    font-family: 'SF-Pro-Text-Bold';
+}
+
+.SF-Pro-Text-Heavy {
+    font-family: 'SF-Pro-Text-Heavy';
 }
