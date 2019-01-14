@@ -16,7 +16,7 @@ export class HttpClientPage implements OnInit {
   readonly kyberMainnetTokens: string = 'https://tracker.kyber.network/api/tokens/supported';
   readonly nomicsEthereumDashEndpoint: string = 'https://api.nomics.com/v1/dashboard?key=' + this.nomicsApiKey;
 
-  readonly etherPrice: string = 'https://api.nomics.com/v1/prices?key=';
+  readonly etherPrice: string = 'https://api.nomics.com/v1/prices?key=' + this.nomicsApiKey;
 
   tokenData: Observable<tokenData[]>;
   cryptoData: Observable<ethDashboard[]>;

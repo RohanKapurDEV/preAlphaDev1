@@ -1,9 +1,13 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>QR Code Reader</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content padding>
-
+  <div class="SF-Pro-Display-Bold title">QR Code Reader</div>
+  <br>
+  <div class="SF-Pro-Text-Regular"> The following component is for reading QR Codes from device hardware.</div>
+  <br>
+  <ion-button color="tertiary" (click)="qrButtonClicked()"> <ion-icon name="qr-scanner" slot="start"></ion-icon> Scan QR code</ion-button>
+  <br>
+  <br>
+  <div class="SF-Pro-Text-Bold"> {{friendAddress}} </div>
+  <br>
+  <div class="box">
+  </div>
 </ion-content>
