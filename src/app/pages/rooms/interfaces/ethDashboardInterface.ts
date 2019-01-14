@@ -1,0 +1,22 @@
+export interface ethDashboard {
+    currency: string,
+    dayOpen: string,
+    dayVolume: string,
+    dayOpenVolume: string,
+    weekOpen: string,
+    weekVolume: string,
+    weekOpenVolume: string,
+    monthOpen: string,
+    monthVolume: string,
+    monthOpenVolume: string,
+    yearOpen: string,
+    yearVolume: string,
+    yearOpenVolume: string,
+    close: string,
+    high: string,
+    highTimeStamp: string,
+    highExchange: string,
+    highQuoteCurrency: string,
+    availableSupply: string,
+    maxSupply: string
+}

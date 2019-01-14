@@ -1,21 +1,36 @@
 <ion-content padding>
   <div class="SF-Pro-Text-Bold title">Data fetching</div>
-  <p class="SF-Pro-Text-Regular">This page is to test out the Kyber Network and Cryptocompare REST APIs.</p>
+  <p class="SF-Pro-Text-Regular">This page is to test out the Kyber Network and Nomics REST APIs.</p>
   
-  <ion-button class="button" color="dark" fill="outline" (click)="getKyberPairRates()">Fetch data</ion-button>
-  <div> {{ loading }} </div>
-  
+  <ion-button class="button" color="medium" fill="outline" (click)="getCryptoData()">Fetch Crypto data</ion-button>
+  <ion-button class="button" color="dark" fill="outline" (click)="getKyberPairRates()">Fetch ERC20 data</ion-button>
+  <ion-button class="button" color="tertiary" fill="outline" (click)="getEtherData()">Fetch Ethereum data</ion-button>
+
   <br>
 
-  <div *ngFor="let item of tokenData | async">
-    {{ item.name }}
-  </div>
+  <ion-list class="tokenDataClass">
+    <ion-item *ngFor="let item of tokenData | async">
+      <ion-label>
+        <h2 class="SF-Pro-Text-Medium"> {{item.name}} </h2>
+        <h3 class="SF-Pro-Text-Regular"> {{item.symbol}} </h3>
+        <h3 class="SF-Pro-Text-Regular"> {{item.contractAddress}} </h3>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+  <ion-list class="cryptoDataClass">
+      <ion-item *ngFor="let item of cryptoData | async">
+        <ion-label>
+          <h2 class="SF-Pro-Text-Medium"> {{item.currency}} </h2>
+          <h3 class="SF-Pro-Text-Regular"> {{item.close}} </h3>
+          <h3 class="SF-Pro-Text-Regular"> {{item.availableSupply}} </h3>
+        </ion-label>
+      </ion-item>
+    </ion-list>
   
   <ion-fab vertical="bottom" horizontal="end" slot="fixed" (click)="goToDashboard()">
     <ion-fab-button color="dark" routerDirection="back">
       <ion-icon name="home"></ion-icon>
     </ion-fab-button>
   </ion-fab>
-
-  <div></div>
 </ion-content>
